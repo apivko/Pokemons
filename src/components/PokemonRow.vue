@@ -8,7 +8,7 @@
       :alt="`${pokemon.name}`"
     />
     <div>
-      <button class="catch-btn">Catch it!</button>
+      <button class="catch-btn" @click="showDetails">Catch it!</button>
     </div>
   </div>
 </template>
@@ -58,6 +58,12 @@ export default {
       }
     });
   },
+  methods: {
+    showDetails: function () {
+      const pokemons = this.$parent.pokemons
+      this.$root.$emit('show-details', pokemons[this.index])
+    }
+  }
 };
 </script>
 <style scoped>

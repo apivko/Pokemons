@@ -59,7 +59,7 @@ export default {
     },
     onError: function () {
       this.error = "error"; //does not have any meaning, used here as a flag for now..
-    },
+    }
   }
 };
 </script>

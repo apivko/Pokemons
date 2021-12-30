@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>Pokemons</h1>
+      <h1>Catch A Pokemon</h1>
   </div>
 </template>
 
@@ -13,6 +13,7 @@ export default {
 
 <style scoped>
   h1 {
+    color: #ffffff;
     letter-spacing: 6px;
   }
 </style>

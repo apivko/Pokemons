@@ -18,12 +18,15 @@ export default {
 <style>
 @import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  background-image: url("./assets/poke-texture.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Pokemon Solid', sans-serif;
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

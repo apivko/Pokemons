@@ -26,6 +26,7 @@ export default {
     index: {
       required: true,
       type: Number,
+      default: 0,
     },
   },
   data: () => {
@@ -60,10 +61,10 @@ export default {
   },
   methods: {
     showDetails: function () {
-      const pokemons = this.$parent.pokemons
-      this.$root.$emit('show-details', pokemons[this.index])
-    }
-  }
+      const pokemons = this.$parent.pokemons;
+      this.$root.$emit("show-details", pokemons[this.index]);
+    },
+  },
 };
 </script>
 <style scoped>
@@ -76,7 +77,7 @@ export default {
 }
 
 .row-container > span {
-  color: green;
+  color: #dfdfdf;
   letter-spacing: 3px;
 }
 .catch-btn {

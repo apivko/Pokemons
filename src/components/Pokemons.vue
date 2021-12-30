@@ -37,8 +37,7 @@ export default {
 
 <style scoped>
 .container-style {
-  /* background-image: url("../assets/pokemons-main.png");
-  background-repeat: no-repeat; */
+  
   margin-left: 200px;
   margin-right: 200px;
   height: 700px;

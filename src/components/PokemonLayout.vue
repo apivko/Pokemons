@@ -19,8 +19,7 @@
 
 <script>
 export default {
-  name: 'Pokemons-Layout',
-
+  name: "Pokemons-Layout",
 };
 </script>
 
@@ -32,8 +31,9 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 600px;
+  height: 500px;
   border: 2px solid black;
+  
 }
 .list {
   width: 30%;
@@ -41,6 +41,9 @@ export default {
   border: 1px solid #8d8d8d;
 }
 .details {
+  background-image: url("../assets/pokemon-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 70%;
   height: 100%;
 }

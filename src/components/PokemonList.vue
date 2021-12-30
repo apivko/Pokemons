@@ -11,6 +11,7 @@
       :key="index"
     >
       <Pokemon-Row
+        :ref="`row-${index}`"
         :pokemon="pokemon"
         :index="index"
         @onLoaded="onLoaded"
@@ -56,9 +57,12 @@ export default {
       const { index, imgData, details } = pokemonDataObj;
       Object.assign(this.pokemons[index], { imgData, details });
       this.loading = false;
+      if (index == 0) {
+        this.$refs['row-0'][0].showDetails();
+      }
     },
     onError: function () {
-      this.error = "error"; //does not have any meaning, used here as a flag for now..
+      this.error = "error"; //text does not have any meaning, used here as a flag for now..
     }
   }
 };

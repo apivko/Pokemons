@@ -1,7 +1,6 @@
 const BASE_POKEMON_URL = "https://pokeapi.co/api/v2";
 
 const apiFetcher = async (url) => {
-  // const { offset, limit } = paginationOptions;
   try {
     const response = await fetch(url);
     if (response.status != 200) {
